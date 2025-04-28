@@ -1,0 +1,39 @@
+Credit Card Application Tracker Report
+Generated on: 2025-04-28 19:52:11
+----------------------------------------
+Approval Summary:
+status               count       percentage
+-------------------- ----------- ---------------------------------------
+Approved             2           50.00
+Rejected             2           50.00
+
+(2 rows affected)
+
+KYC Compliance Summary:
+kyc_status           count       percentage
+-------------------- ----------- ---------------------------------------
+Pending              2           50.00
+Verified             2           50.00
+
+(2 rows affected)
+
+Applicants Needing KYC Action:
+applicant_id name                                                                                                 id_number                                          kyc_status           compliance_action
+------------ ---------------------------------------------------------------------------------------------------- -------------------------------------------------- -------------------- -----------------
+2            Tom Lee                                                                                              NULL                                               Pending              Action: Verify ID
+4            Emily Chen                                                                                           NULL                                               Pending              Action: Verify ID
+
+(2 rows affected)
+
+Detailed Applicant Results:
+applicant_id name                                                                                                 income                                  credit_score kyc_status           status               reason
+------------ ---------------------------------------------------------------------------------------------------- --------------------------------------- ------------ -------------------- -------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1            Sarah Miller                                                                                         45000.00                                720          Verified             Approved             High credit score and sufficient income
+2            Tom Lee                                                                                              25000.00                                600          Pending              Rejected             Credit score below threshold
+3            John Smith                                                                                           60000.00                                680          Verified             Approved             Meets credit and income requirements
+4            Emily Chen                                                                                           30000.00                                620          Pending              Rejected             Credit score too low
+
+(4 rows affected)
+
+
+Completion time: 2025-04-28T19:52:11.6384167+05:30
